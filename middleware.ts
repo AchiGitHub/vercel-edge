@@ -12,7 +12,7 @@ export async function middleware(req: NextRequest) {
 
     try {
         // Check whether the maintenance page should be shown
-        const jsonConfig = await getAll<boolean>()
+        const jsonConfig = await getAll()
 
         // If is in maintenance mode, point the url pathname to the maintenance page
         if (jsonConfig) {
