@@ -5,6 +5,7 @@ export const config = { matcher: ['/'] };
 
 export async function middleware(req: NextRequest) {
   const edgeConfig = await get('isInMaintenanceMode');
+  console.log("🚀 ~ file: middleware.ts:8 ~ middleware ~ edgeConfig", edgeConfig)
   // NextResponse.json requires at least Next v13.1 or
   // enabling experimental.allowMiddlewareResponseBody in next.config.js
 //   return NextResponse.json(edgeConfig);
