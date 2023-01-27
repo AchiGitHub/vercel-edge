@@ -1,0 +1,29 @@
+.grid-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 4px;
+}
+
+.grid {
+  height: 100%;
+}
+.headline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.grid-header {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (min-device-width: 480px) and (max-device-width: 768px) and (orientation: portrait) {
+  .grid{
+    height: calc((100vh - 190px) / 2);
+  }
+}

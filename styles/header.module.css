@@ -1,0 +1,26 @@
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 767px) {
+    .content {
+        flex-direction: column;
+    }
+}

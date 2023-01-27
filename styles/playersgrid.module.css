@@ -1,0 +1,17 @@
+.players-grid-header {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.player-box {
+  height: 100%;
+}
+
+.grid-box {
+  height: 100%;
+}
+
+@media screen and (min-device-width: 480px) and (max-device-width: 768px) and (orientation: portrait) {
+  .player-box {
+    height: calc((100vh - 280px)/2);
+  }
+}

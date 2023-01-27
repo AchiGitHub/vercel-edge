@@ -1,0 +1,46 @@
+.playerGrid {
+  margin-top: 20px;
+  height: calc(100vh - 324px);
+  overflow-y: scroll;
+  border-radius: 4px;
+}
+
+.bood-rule-players-grid-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding-bottom: 15px;
+  margin-top: 20px;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.blood-grid-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 4px;
+}
+
+.blood-grid-header {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 4px;
+}
+
+.blood-grid {
+  height: 100%;
+}
+
+@media screen and (min-device-width: 480px) and (max-device-width: 768px) and (orientation: portrait) {
+  .player-box{
+    height: calc((100vh - 190px) / 2);
+  }
+}
+
+@media screen and (min-device-width: 480px) and (max-device-width: 768px) and (orientation: portrait) {
+  .blood-grid{
+    height: calc((100vh - 190px) / 2);
+  }
+}

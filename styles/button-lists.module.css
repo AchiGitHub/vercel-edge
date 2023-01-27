@@ -1,0 +1,25 @@
+.scroll-container {
+  max-height: calc(100vh - 200px);
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.scroll-container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background: #666;
+}
+
+@media only screen and (min-width: 570px) and (max-width: 768px) {
+  .scroll-container {
+    max-height: calc(100vh - 200px);
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .scroll-container {
+    max-height: calc(100vh - 310px);
+  }
+}

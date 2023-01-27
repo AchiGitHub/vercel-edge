@@ -1,0 +1,84 @@
+.interchange-grid-container {
+  height: 100%;
+  color: white;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.interchange-grid-header {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.interchange-grid {
+  height: calc(100vh - 280px);
+}
+
+.headline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.interchange-count {
+  width: 100%;
+  text-align: center;
+}
+
+.warning {
+  color: #001F4E;
+  background-color: #FFF67D;
+}
+
+.warning-button {
+  color: #001F4E;
+}
+
+.count-limit {
+  background-color: #DB0000;
+  color: #fff;
+}
+
+.count-limit-button {
+  color: #fff;
+}
+
+.warning-header {
+  background-color: #AF8C00;
+}
+
+.count-limit-header {
+  background-color: #A00012;
+}
+
+.interchange-button {
+  color: #fff;
+}
+
+.interchange-header {
+  margin-top: 20px;
+}
+
+.button-row {
+  width: 100%;
+}
+
+/* @media screen and (min-device-width: 480px) and (max-device-width: 768px) and (orientation: portrait) {
+  .interchange-grid-container {
+    height: calc(100vh - 680px);
+    overflow-y: scroll;
+  }
+} */
+
+@media only screen and (max-width: 900px) {
+  .button-row {
+    width: 60%;
+  }
+}
+
+@media screen and (min-device-width: 480px) and (max-device-width: 768px) and (orientation: portrait) {
+  .interchange-grid {
+    height: calc((100vh - 400px)/2);
+  }
+}

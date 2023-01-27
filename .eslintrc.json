@@ -1,0 +1,19 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "next/core-web-vitals",
+    "next",
+    "prettier"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "**/*.spec.ts",
+        "**/*.spec.tsx"
+      ],
+      "env": {
+        "jest": true
+      }
+    }
+  ]
+}
