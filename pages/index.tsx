@@ -45,6 +45,7 @@ function Home() {
   useEffect(() => {
     const token = window.localStorage.getItem('token') || "";
     setToken(token);
+    getConfig();
   }, [])
 
   useSignalR({
@@ -59,6 +60,13 @@ function Home() {
       }
     }
   });
+
+  const getConfig = async () => {
+    let res = await fetch(`https://vercel-edge-mocha.vercel.app/api/config`);
+    let data = await res.json();
+    console.log("Edge config", data);
+  }
+
 
   const selectedTeamName =
     teamName.name === 'home'
