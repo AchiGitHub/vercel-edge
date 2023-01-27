@@ -1,11 +1,9 @@
 import { NextResponse } from 'next/server';
-import { get } from '@vercel/edge-config';
+import { getAll } from '@vercel/edge-config';
 
 export default async () => {
-  const exampleValue1 = await get('isInMaintenanceMode');
-  return NextResponse.json({
-    example: `This is the value of "isInMaintenanceMode" in my Edge Config: ${exampleValue1}!`,
-  });
+  const config = await getAll();
+  return NextResponse.json(config);
 };
 
 export const config = {
