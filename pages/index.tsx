@@ -62,7 +62,7 @@ function Home() {
   });
 
   const getConfig = async () => {
-    let res = await fetch(`https://vercel-edge-mocha.vercel.app/api/config`);
+    let res = await fetch(`/api/config`);
     let data = await res.json();
     console.log("Edge config", data);
   }
